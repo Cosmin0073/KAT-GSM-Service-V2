@@ -1,0 +1,214 @@
+/* Resetare stiluri implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stiluri generale */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; /* Fundal alb */
+    color: #000000; /* Text negru */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('img/background-pattern.png'); /* Fundal subtil */
+    background-repeat: repeat;
+    background-size: 200px; /* Dimensiunea modelului */
+}
+
+/* Header */
+header {
+    background-color: #ffffff; /* Header alb */
+    color: #000000; /* Text negru */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Umbra subtilă */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Logo */
+header img {
+    max-width: 150px; /* Ajustează dimensiunea logo-ului */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Navigație */
+nav {
+    background-color: #ffffff; /* Navigație albă */
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Umbra subtilă */
+}
+
+nav a {
+    color: #000000; /* Text negru */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #25D366; /* Culoare WhatsApp la hover */
+}
+
+/* Secțiuni */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff; /* Fundal alb pentru secțiuni */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Umbra subtilă */
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000; /* Text negru */
+    position: relative;
+}
+
+section h2::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: #000000; /* Linie decorativă */
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #000000; /* Linie decorativă */
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #333333; /* Text gri închis */
+}
+
+/* Butoane servicii */
+.service-button {
+    display: inline-block;
+    background-color: transparent; /* Fundal transparent */
+    color: #000000; /* Text negru */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #000000; /* Bordură neagră */
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.service-button:hover,
+.service-button:active {
+    background-color: rgba(0, 0, 0, 0.1); /* Fundal semi-transparent la hover/apăsare */
+    color: #000000; /* Text negru */
+    transform: translateY(-2px); /* Efect de ridicare */
+}
+
+/* Buton WhatsApp */
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366; /* Verde WhatsApp */
+    color: #ffffff; /* Text alb */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Verde WhatsApp mai închis la hover */
+    transform: translateY(-2px); /* Efect de ridicare */
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff; /* Footer alb */
+    color: #000000; /* Text negru */
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Asigură că footer-ul rămâne în partea de jos */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Umbra subtilă */
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Stiluri pentru pagina de serviciu */
+#serviciu {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.serviciu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.serviciu-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.serviciu-detalii {
+    text-align: left;
+    width: 100%;
+}
+
+.serviciu-detalii h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.serviciu-detalii ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.serviciu-detalii ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
